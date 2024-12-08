@@ -208,3 +208,92 @@
   
 //   mainFunction();
   
+
+// -----------------------------------Chapter 43 TO 48-----------------------------------
+
+
+// Question 1
+
+// function showAlert() {
+//     alert("You clicked the link!");
+//   }
+
+// Question 2
+
+// function purchaseMessage() {
+//     alert("Thanks for purchasing!");
+//   }
+
+// Question 3
+
+// function deleteRow(button) {
+//     var row = button.parentNode.parentNode;
+//     row.remove();
+//   }
+
+// Question 4
+
+// function changeImage() {
+//     document.getElementById('image').src = "./Assets/Images/316-3165336_android-smartphone-png-transparent-png.png";
+//   }
+
+//   function resetImage() {
+//     document.getElementById('image').src = "./Assets/Images/316-3165336_android-smartphone-png-transparent-png.png";
+//   }
+
+// Question 5
+
+// var counter = 0;
+
+// function increaseCounter() {
+//   counter++;
+//   updateCounter();
+// }
+
+// function decreaseCounter() {
+//   counter--;
+//   updateCounter();
+// }
+
+// function updateCounter() {
+//   document.getElementById('counter').textContent = counter;
+// }
+
+// -----------------------------------Chapter 49 TO 52 -----------------------------------
+// Question 1
+
+// function handleSubmit(event) {
+//     event.preventDefault();
+    
+//     var name = document.getElementById('name').value;
+//     var email = document.getElementById('email').value;
+//     var password = document.getElementById('password').value;
+    
+//     document.getElementById('displayName').textContent = name;
+//     document.getElementById('displayEmail').textContent = email;
+//     document.getElementById('displayPassword').textContent = password;
+
+//     document.getElementById('result').style.display = 'block';
+
+//     document.getElementById('signupForm').reset();
+//   }
+
+// Question 2
+
+// function toggleReadMore() {
+//     var preview = document.querySelector('.preview');
+//     var fullContent = document.querySelector('.full-content');
+//     var readMoreLink = document.querySelector('.read-more');
+
+//     if (fullContent.style.display === 'none') {
+//       fullContent.style.display = 'block';
+//       preview.style.display = 'none';
+//       readMoreLink.textContent = 'Read less';
+//     } else {
+//       fullContent.style.display = 'none';
+//       preview.style.display = 'block';
+//       readMoreLink.textContent = 'Read more';
+//     }
+//   }
+
+// Question 3
