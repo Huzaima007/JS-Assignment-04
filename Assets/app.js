@@ -297,3 +297,118 @@
 //   }
 
 // Question 3
+// var studentForm = document.getElementById('studentForm');
+// var studentTable = document.getElementById('studentTable').querySelector('tbody');
+// var editForm = document.getElementById('editForm');
+// var editName = document.getElementById('editName');
+// var editAge = document.getElementById('editAge');
+// var editGrade = document.getElementById('editGrade');
+// var cancelEdit = document.getElementById('cancelEdit');
+
+// var currentRow = null;
+
+// studentForm.addEventListener('submit', (event) => {
+//   event.preventDefault();
+
+//   var name = document.getElementById('name').value;
+//   var age = document.getElementById('age').value;
+//   var grade = document.getElementById('grade').value;
+
+//   addRow(name, age, grade);
+
+//   studentForm.reset();
+// });
+
+// function addRow(name, age, grade) {
+//   var row = document.createElement('tr');
+
+//   row.innerHTML = `
+//     <td>${name}</td>
+//     <td>${age}</td>
+//     <td>${grade}</td>
+//     <td>
+//       <button class="edit">Edit</button>
+//       <button class="delete">Delete</button>
+//     </td>
+//   `;
+
+//   row.querySelector('.delete').addEventListener('click', () => {
+//     row.remove();
+//   });
+
+//   row.querySelector('.edit').addEventListener('click', () => {
+//     currentRow = row;
+//     editName.value = name;
+//     editAge.value = age;
+//     editGrade.value = grade;
+
+//     editForm.classList.remove('hidden');
+//   });
+
+//   studentTable.appendChild(row);
+// }
+
+// editForm.addEventListener('submit', (event) => {
+//   event.preventDefault();
+
+//   currentRow.cells[0].textContent = editName.value;
+//   currentRow.cells[1].textContent = editAge.value;
+//   currentRow.cells[2].textContent = editGrade.value;
+
+//   editForm.classList.add('hidden');
+// });
+
+// cancelEdit.addEventListener('click', () => {
+//   editForm.classList.add('hidden');
+// });
+
+// -----------------------------------Chapter 58 TO 67 -----------------------------------
+
+// Question 1
+
+// var mainContent = document.getElementById("main-content");
+// console.log("Main Content Element:", mainContent);
+
+// var mainContentChildren = mainContent.children;
+// console.log("Child Elements of Main Content:");
+// for (var child of mainContentChildren) {
+//   console.log(child);
+// }
+
+// var renderElements = document.getElementsByClassName("render");
+// console.log("Inner HTML of Elements with class 'render':");
+// for (var element of renderElements) {
+//   console.log(element.innerHTML);
+// }
+
+// var firstNameInput = document.getElementById("first-name");
+// firstNameInput.value = "Alex";
+
+// var lastNameInput = document.getElementById("last-name");
+// lastNameInput.value = "Bank";
+
+// var emailInput = document.getElementById("email");
+// emailInput.value = "alexbank@example.com";
+
+// Question 2
+
+// var formContent = document.getElementById("form-content");
+//     console.log("Node type of 'form-content':", formContent.nodeType); 
+
+//     var lastName = document.getElementById("lastName");
+//     console.log("Node type of 'lastName':", lastName.nodeType); 
+//     console.log("Node type of 'lastName' child:", lastName.firstChild.nodeType); 
+
+//     lastName.innerHTML = "Last Name: Smith";
+//     console.log("Updated 'lastName' child node:", lastName.innerHTML);
+
+//     var mainContent = document.getElementById("main-content");
+//     console.log("First child of 'main-content':", mainContent.firstElementChild);
+//     console.log("Last child of 'main-content':", mainContent.lastElementChild);
+
+//     console.log("Next sibling of 'lastName':", lastName.nextElementSibling);
+//     console.log("Previous sibling of 'lastName':", lastName.previousElementSibling);
+
+//     var email = document.getElementById("email");
+//     console.log("Parent node of 'email':", email.parentNode);
+//     console.log("Node type of 'email':", email.parentNode.nodeType); 
